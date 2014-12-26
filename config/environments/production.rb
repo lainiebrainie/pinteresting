@@ -81,5 +81,5 @@ Pinteresting::Application.configure do
 
   # Required for Heroku
   # Note to set this to actual host
-  config.action_mailer.default_url_options = { :host => 'localhost:3000'}
+  config.action_mailer.default_url_options = { :host => 'https://glacial-plains-4091.herokuapp.com/'}
 end
