@@ -90,5 +90,8 @@ Pinteresting::Application.configure do
     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
+
+  # config/environments/production.rb
+  config.action_controller.asset_host = "https://glacial-plains-4091.herokuapp.com/"
 }
 end
