@@ -194,6 +194,7 @@ Devise.setup do |config|
   # REST_AUTH_SITE_KEY to pepper).
   #
   # Require the `devise-encryptable` gem when using anything other than bcrypt
+  
   # config.encryptor = :sha512
 
   # ==> Scopes configuration
@@ -251,4 +252,8 @@ Devise.setup do |config|
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+
+  # Required for omniauth-facebook
+  config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"],
+  :client_options => {:ssl => {:ca_path => '/etc/ssl/certs'}}
 end

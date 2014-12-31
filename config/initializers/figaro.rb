@@ -1,0 +1,1 @@
+Figaro.require_keys("APP_ID", "APP_SECRET")
